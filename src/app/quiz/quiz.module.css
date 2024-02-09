@@ -1,0 +1,31 @@
+.quiz__wrapper {
+  background-color: var(--global-neutral-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 10%;
+  flex-direction: column;
+}
+
+.quiz__stepper {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.quiz__section__form {
+  flex: 1;
+  background-color: var(--global-secondary-background-color);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.quiz__footer {
+  display: flex;
+  padding: 20px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

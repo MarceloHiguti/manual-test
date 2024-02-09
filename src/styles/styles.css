@@ -1,0 +1,21 @@
+@font-face {
+  font-weight: 400;
+  font-family: var(--font-ttnorms);
+  src: url('/fonts/TTNorms-Regular') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --global-primary-background-color: #A7B79F;
+  --global-secondary-background-color: #FFFFFF;
+  --global-footer-background-color: #E9EFE9;
+  --global-neutral-background-color: #F8F9FA;
+  --global-primary-text-color: #0B3B3C;
+  --mobile: 600px;
+  --tablet: 1024px;
+  --desktop: 1280px;
+  --widescreen: 1440px;
+  --fullhd: 1920px;
+  --font-ttnorms: 'TT Norms';
+}
