@@ -1,7 +1,7 @@
 import Image from "next/image";
-import style from './LandingPage.module.css'
+import style from './LandingPage.module.scss'
 import Link from "next/link";
-import { CoreText } from "@/components/CoreText/CoreText";
+import { CoreTypography } from "@/components/CoreTypography/CoreTypography";
 import { Button, Divider } from "@mui/material";
 import GoogleIcon from '@mui/icons-material/Google';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -20,9 +20,17 @@ export default function LandingPage() {
           style={{ width: '100%', minHeight: '750px' }} // optional
           alt="Section 01 background image" 
         />
+        <div className={style.section01__logo__container}>
+          <Image
+            src={ManualLogo}
+            alt="Manual icon"
+            width={40}
+            height={38}
+          />
+        </div>
         <div className={style.section01__text__container}>
-          <CoreText customClassName={style.section01__text__title}>Be good to yourself</CoreText>
-          <CoreText customClassName={style.section01__text__subtitle}>We’re working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.</CoreText>
+          <CoreTypography customClassName={style.section01__text__title}>Be good to yourself</CoreTypography>
+          <CoreTypography customClassName={style.section01__text__subtitle}>We’re working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.</CoreTypography>
           
           <Link href="/quiz">
             <Button style={{backgroundColor: '#7e0807', marginTop: '40px', padding: '15px 30px 15px 30px'}} variant='contained'>take the quiz</Button>
@@ -31,7 +39,7 @@ export default function LandingPage() {
       </div>
       <div className={style.section02__container}>
         <div className={style.section02__text__title__container}>
-          <CoreText customClassName={style.section02__text__title}>What we can help with</CoreText>
+          <CoreTypography customClassName={style.section02__text__title}>What we can help with</CoreTypography>
         </div>
         <div className={style.section02__content__container}>
           <div className={style.section02__content__image}>
@@ -45,9 +53,9 @@ export default function LandingPage() {
           </div>
           <div className={style.section02__content__text__container}>
             <div className={style.section02__content__text__group}>
-              <CoreText customClassName={style.section02__content__text__01}>HAIR LOSS</CoreText>
-              <CoreText customClassName={style.section02__content__text__02}>Hair loss needn’t be irreversible. We can help! </CoreText>
-              <CoreText customClassName={style.section02__content__text__03}>We’re working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.</CoreText>
+              <CoreTypography customClassName={style.section02__content__text__01}>HAIR LOSS</CoreTypography>
+              <CoreTypography customClassName={style.section02__content__text__02}>Hair loss needn’t be irreversible. We can help! </CoreTypography>
+              <CoreTypography customClassName={style.section02__content__text__03}>We’re working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.</CoreTypography>
             </div>
           </div>
         </div>
@@ -55,9 +63,9 @@ export default function LandingPage() {
       <div className={style.section03__container}>
         <div className={style.section03__content__container}>
           <div className={style.section02__content__text__group}>
-            <CoreText customClassName={style.section02__content__text__01}>ERECETILE DYSFUNCTION</CoreText>
-            <CoreText customClassName={style.section02__content__text__02}>Erections can be a tricky thing. But no need to feel down!</CoreText>
-            <CoreText customClassName={style.section02__content__text__03}>We’re working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.</CoreText>
+            <CoreTypography customClassName={style.section02__content__text__01}>ERECETILE DYSFUNCTION</CoreTypography>
+            <CoreTypography customClassName={style.section02__content__text__02}>Erections can be a tricky thing. But no need to feel down!</CoreTypography>
+            <CoreTypography customClassName={style.section02__content__text__03}>We’re working around the clock to bring you a holistic approach to your wellness. From top to bottom, inside and out.</CoreTypography>
           </div>
           <Image
             src="/images/section03-image.png"
@@ -79,30 +87,30 @@ export default function LandingPage() {
           </div>
           <div className={style.footer__info__frames__container}>
             <div className={style.footer__info__frame}>
-              <CoreText customClassName={style.footer_info_title}>PRODUCT</CoreText>
+              <CoreTypography customClassName={style.footer_info_title}>PRODUCT</CoreTypography>
 
-              <CoreText customClassName={style.footer_info_title}>Popular</CoreText>
-              <CoreText customClassName={style.footer_info_title}>Trending</CoreText>
-              <CoreText customClassName={style.footer_info_title}>Guided</CoreText>
-              <CoreText customClassName={style.footer_info_title}>Products</CoreText>
+              <CoreTypography customClassName={style.footer_info_title}>Popular</CoreTypography>
+              <CoreTypography customClassName={style.footer_info_title}>Trending</CoreTypography>
+              <CoreTypography customClassName={style.footer_info_title}>Guided</CoreTypography>
+              <CoreTypography customClassName={style.footer_info_title}>Products</CoreTypography>
             </div>
             <div className={style.footer__info__frame}>
-              <CoreText customClassName={style.footer_info_title}>COMPANY</CoreText>
+              <CoreTypography customClassName={style.footer_info_title}>COMPANY</CoreTypography>
 
-              <CoreText customClassName={style.footer_info_title}>Press</CoreText>
-              <CoreText customClassName={style.footer_info_title}>Mission</CoreText>
-              <CoreText customClassName={style.footer_info_title}>Strategy</CoreText>
-              <CoreText customClassName={style.footer_info_title}>About</CoreText>
+              <CoreTypography customClassName={style.footer_info_title}>Press</CoreTypography>
+              <CoreTypography customClassName={style.footer_info_title}>Mission</CoreTypography>
+              <CoreTypography customClassName={style.footer_info_title}>Strategy</CoreTypography>
+              <CoreTypography customClassName={style.footer_info_title}>About</CoreTypography>
             </div>
             <div className={style.footer__info__frame}>
-              <CoreText customClassName={style.footer_info_title}>INFO</CoreText>
+              <CoreTypography customClassName={style.footer_info_title}>INFO</CoreTypography>
 
-              <CoreText customClassName={style.footer_info_title}>Support</CoreText>
-              <CoreText customClassName={style.footer_info_title}>Customer Service</CoreText>
-              <CoreText customClassName={style.footer_info_title}>Get Started</CoreText>
+              <CoreTypography customClassName={style.footer_info_title}>Support</CoreTypography>
+              <CoreTypography customClassName={style.footer_info_title}>Customer Service</CoreTypography>
+              <CoreTypography customClassName={style.footer_info_title}>Get Started</CoreTypography>
             </div>
             <div className={style.footer__info__frame}>
-              <CoreText customClassName={style.footer_info_title}>FOLLOW US</CoreText>
+              <CoreTypography customClassName={style.footer_info_title}>FOLLOW US</CoreTypography>
               <div className={style.footer__socialMedia__icons}>
                 <Image
                   src={FacebookIcon}
@@ -119,7 +127,7 @@ export default function LandingPage() {
         </div>
         <div className={style.footer__rights__container}>
           <Divider />
-          <CoreText customClassName={style.footer__rights__text}>© 2021 Manual. All rights reserverd</CoreText>
+          <CoreTypography customClassName={style.footer__rights__text}>© 2021 Manual. All rights reserverd</CoreTypography>
         </div>
       </div>
     </div>

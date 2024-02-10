@@ -1,14 +1,28 @@
-.section01__container {
-  width: 100%;
-  min-height: 750px;
-  position: relative;
-  display: inline-block;
-}
+.section01 {
+  &__container {
+    width: 100%;
+    min-height: 750px;
+    position: relative;
+    display: inline-block;
+  }
 
-.section01__text__title {
-  color: var(--global-primary-text-color);
-  font-size: 90px;
-  line-height: 90px;
+  &__text {
+    &__title {
+      color: var(--global-primary-text-color);
+      font-size: 90px;
+      line-height: 90px;
+    }
+  }
+
+  &__logo {
+    &__container {
+      position: absolute;
+      top: 5%;
+      left: 10%;
+      padding: 10px;
+      z-index: 1;
+    }
+  }
 }
 
 .section01__text__subtitle {

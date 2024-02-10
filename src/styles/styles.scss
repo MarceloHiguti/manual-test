@@ -1,6 +1,6 @@
 @font-face {
   font-weight: 400;
-  font-family: var(--font-ttnorms);
+  font-family: var(--font-family-ttnorms);
   src: url('/fonts/TTNorms-Regular') format('otf');
   font-weight: normal;
   font-style: normal;
@@ -17,5 +17,5 @@
   --desktop: 1280px;
   --widescreen: 1440px;
   --fullhd: 1920px;
-  --font-ttnorms: 'TT Norms';
+  --font-family-ttnorms: 'TT Norms';
 }

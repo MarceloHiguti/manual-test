@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+%centerAndSize {
+  margin: auto;
+}
+
+.stepper {
+  @extend %centerAndSize;
+  margin-bottom: 24px;
+  padding: 24px;
+  padding-bottom: 0;
+}
+
+%actionButtonDefaultGap {
+  gap: 24px;
+}
+
+.contentStepper {
+  @extend %centerAndSize;
+  display: flex;
+
+  gap: 16px;
+
+  &__buttonsLeft {
+    @extend %actionButtonDefaultGap;
+    justify-content: flex-start;
+  }
+
+  &__buttonsRight {
+    @extend %actionButtonDefaultGap;
+    justify-content: flex-end;
+  }
+
+  &__buttonsCenter {
+    @extend %actionButtonDefaultGap;
+    justify-content: center;
+  }
+}
+
+.emptyBox {
+  flex: 1;
+}

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "/src/styles/globals.css";
-import "/src/styles/styles.css";
+import "/src/styles/globals.scss";
+import "/src/styles/styles.scss";
 
 export const metadata: Metadata = {
   title: "Manual.co",
