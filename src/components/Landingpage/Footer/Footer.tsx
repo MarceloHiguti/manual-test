@@ -12,79 +12,91 @@ const Footer: FC = () => {
   return (
     <div className={style.section__footer}>
       <div className={style.footer__info__container}>
-        <div>
+        <div className={style.footer__manualLogo}>
           <Image src={ManualLogo} alt="Manual icon" width={75} height={75} />
         </div>
         <div className={style.footer__info__frames__container}>
-          <div className={style.footer__info__frame}>
-            <CoreTypography customClassName={style.footer_info_title}>
-              PRODUCT
-            </CoreTypography>
+          <div className={style.footer__info__frames__container__01}>
+            <div className={style.footer__info__frame}>
+              <CoreTypography
+                customClassName={style.footer__info__frame__title}
+              >
+                PRODUCT
+              </CoreTypography>
 
-            <CoreTypography customClassName={style.footer_info_title}>
-              Popular
-            </CoreTypography>
-            <CoreTypography customClassName={style.footer_info_title}>
-              Trending
-            </CoreTypography>
-            <CoreTypography customClassName={style.footer_info_title}>
-              Guided
-            </CoreTypography>
-            <CoreTypography customClassName={style.footer_info_title}>
-              Products
-            </CoreTypography>
-          </div>
-          <div className={style.footer__info__frame}>
-            <CoreTypography customClassName={style.footer_info_title}>
-              COMPANY
-            </CoreTypography>
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                Popular
+              </CoreTypography>
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                Trending
+              </CoreTypography>
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                Guided
+              </CoreTypography>
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                Products
+              </CoreTypography>
+            </div>
+            <div className={style.footer__info__frame}>
+              <CoreTypography
+                customClassName={style.footer__info__frame__title}
+              >
+                COMPANY
+              </CoreTypography>
 
-            <CoreTypography customClassName={style.footer_info_title}>
-              Press
-            </CoreTypography>
-            <CoreTypography customClassName={style.footer_info_title}>
-              Mission
-            </CoreTypography>
-            <CoreTypography customClassName={style.footer_info_title}>
-              Strategy
-            </CoreTypography>
-            <CoreTypography customClassName={style.footer_info_title}>
-              About
-            </CoreTypography>
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                Press
+              </CoreTypography>
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                Mission
+              </CoreTypography>
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                Strategy
+              </CoreTypography>
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                About
+              </CoreTypography>
+            </div>
           </div>
-          <div className={style.footer__info__frame}>
-            <CoreTypography customClassName={style.footer_info_title}>
-              INFO
-            </CoreTypography>
+          <div className={style.footer__info__frames__container__02}>
+            <div className={style.footer__info__frame}>
+              <CoreTypography
+                customClassName={style.footer__info__frame__title}
+              >
+                INFO
+              </CoreTypography>
 
-            <CoreTypography customClassName={style.footer_info_title}>
-              Support
-            </CoreTypography>
-            <CoreTypography customClassName={style.footer_info_title}>
-              Customer Service
-            </CoreTypography>
-            <CoreTypography customClassName={style.footer_info_title}>
-              Get Started
-            </CoreTypography>
-          </div>
-          <div className={style.footer__info__frame}>
-            <CoreTypography customClassName={style.footer_info_title}>
-              FOLLOW US
-            </CoreTypography>
-            <div className={style.footer__socialMedia__icons}>
-              <Image
-                src={FacebookIcon}
-                alt="Facebook icon"
-                width={24}
-                height={24}
-                style={{ fill: "#7e0807" }}
-              />
-              <GoogleIcon
-                style={{ width: "24px", height: "24px", fill: "#7e0807" }}
-              />
-              <TwitterIcon
-                style={{ width: "24px", height: "24px", fill: "#7e0807" }}
-              />
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                Support
+              </CoreTypography>
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                Customer Service
+              </CoreTypography>
+              <CoreTypography customClassName={style.footer__info__frame__text}>
+                Get Started
+              </CoreTypography>
+            </div>
+            <div className={style.footer__info__frame}>
+              <CoreTypography
+                customClassName={style.footer__info__frame__title}
+              >
+                FOLLOW US
+              </CoreTypography>
+              <div className={style.footer__socialMedia__icons}>
+                <Image
+                  src={FacebookIcon}
+                  alt="Facebook icon"
+                  width={24}
+                  height={24}
+                  style={{ fill: "#7e0807" }}
+                />
+                <GoogleIcon
+                  style={{ width: "24px", height: "24px", fill: "#7e0807" }}
+                />
+                <TwitterIcon
+                  style={{ width: "24px", height: "24px", fill: "#7e0807" }}
+                />
+              </div>
             </div>
           </div>
         </div>

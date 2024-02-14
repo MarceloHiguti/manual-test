@@ -1,13 +1,9 @@
 @import "../LandingPage.module.scss";
+@import "../../../styles/variables.scss";
 
 .section02 {
   &__container {
-    width: 100%;
-    margin-bottom: 15%;
-    background-color: var(--global-secondary-background-color);
-    display: flex;
-    flex-direction: column;
-    padding: 0px 15%;
+    @include sectionContainer(15%);
   }
 
   &__text {
@@ -17,18 +13,27 @@
       color: var(--global-primary-text-color);
 
       &__container {
-        height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 50px;
       }
     }
   }
 
   &__content {
     &__container {
-      display: flex;
-      justify-content: space-between;
+      @extend %content_container;
+      margin-top: 50px;
+
+      @media (max-width: $tablet) {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    }
+
+    &__image {
+      @extend %content_image;
     }
 
     &__text {
@@ -40,7 +45,7 @@
       }
 
       &__group {
-        width: 372px;
+        @extend %content_text_group;
       }
 
       &__01 {

@@ -32,5 +32,6 @@ export async function getQuizData(): Promise<Array<IQuizData>> {
   );
   const { questions: inputData }: IQuizJsonResponse =
     await fetchQuizData.json();
+
   return transformQuizData(inputData);
 }

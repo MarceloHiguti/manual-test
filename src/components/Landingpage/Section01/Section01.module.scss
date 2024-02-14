@@ -1,25 +1,46 @@
+@import "../../../styles/variables.scss";
+
 .section01 {
+  &__backgroundImage {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
   &__container {
     width: 100%;
     min-height: 750px;
     position: relative;
     display: inline-block;
+
+    @media (max-width: $tablet) {
+      background-color: #a2b69d;
+    }
   }
 
   &__text {
     &__container {
       position: absolute;
-      width: 468px;
+      width: 50%;
       top: 25%;
       left: 10%;
       padding: 10px;
       z-index: 1;
+
+      @media (max-width: $tablet) {
+        width: 70%;
+      }
     }
 
     &__title {
       color: var(--global-primary-text-color);
       font-size: 90px;
       line-height: 90px;
+
+      @media (max-width: $mobile) {
+        font-size: 60px;
+        line-height: 60px;
+      }
     }
 
     &__subtitle {

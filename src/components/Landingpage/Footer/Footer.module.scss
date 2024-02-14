@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .section {
   &__footer {
     width: 100%;
@@ -15,22 +17,64 @@
     &__container {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       padding: 0px 5%;
     }
 
     &__frame {
-      width: 174px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 40px;
+
+      @media (max-width: $mobile) {
+        width: 40%;
+        gap: 20px;
+      }
+
+      &__title {
+        color: #0b3b3c;
+        font-weight: 600;
+      }
+
+      &__text {
+        color: #0b3b3c;
+      }
     }
 
     &__frames {
       &__container {
+        flex: 1 0 auto;
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
         gap: 10px;
+
+        @media (max-width: $mobile) {
+          flex-direction: column;
+          align-items: center;
+          gap: 40px;
+        }
+
+        &__01 {
+          display: flex;
+          flex-direction: row;
+          width: 40%;
+          justify-content: space-around;
+
+          @media (max-width: $mobile) {
+            width: 100%;
+          }
+        }
+
+        &__02 {
+          display: flex;
+          flex-direction: row;
+          width: 40%;
+          justify-content: space-around;
+
+          @media (max-width: $mobile) {
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -54,6 +98,12 @@
       color: #6d8a83;
       padding: 20px;
       text-align: center;
+    }
+  }
+
+  &__manualLogo {
+    @media (max-width: $mobile) {
+      display: none;
     }
   }
 }

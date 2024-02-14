@@ -1,3 +1,28 @@
+@mixin sectionContainer($marginBottom) {
+  margin-bottom: $marginBottom;
+  width: 100%;
+  background-color: var(--global-secondary-background-color);
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20% 0px 15%;
+}
+
+%content_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+%content_image {
+  flex: 1 0;
+  min-width: 300px;
+  max-width: 370px;
+}
+
+%content_text_group {
+  max-width: 372px;
+}
+
 %section_text_01 {
   font-size: 10px;
   line-height: 15px;

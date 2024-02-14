@@ -26,7 +26,7 @@ const Section02: FC<ISection02> = ({ title, content }) => {
             src="/images/section02-image.png"
             width={370}
             height={445}
-            style={{ width: "370px", height: "445px" }} // optional
+            style={{ width: "100%", height: "auto" }}
             alt="Hair loss image"
           />
         </div>

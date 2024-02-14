@@ -14,14 +14,16 @@ interface ISection01 {
 const Section01: FC<ISection01> = async ({ title, subTitle }) => {
   return (
     <div className={style.section01__container}>
-      <Image
-        src="/images/section01-background.jpeg"
-        width={0}
-        height={0}
-        sizes="100vw"
-        style={{ width: "100%", minHeight: "750px" }} // optional
-        alt="Section 01 background image"
-      />
+      <div className={style.section01__backgroundImage}>
+        <Image
+          src="/images/section01-background.jpeg"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", minHeight: "750px" }} // optional
+          alt="Section 01 background image"
+        />
+      </div>
       <div className={style.section01__logo__container}>
         <Image src={ManualLogo} alt="Manual icon" width={40} height={38} />
       </div>
