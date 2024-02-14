@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback } from "react";
 
 interface UseStepperActionsProps {
   isLastStep: boolean;
@@ -41,9 +41,12 @@ export function useStepperActions({
     stepChange(newActiveStep);
   }, [activeStep, stepChange]);
 
-  const handleGoToStep = useCallback((step: number) => {
-    stepChange(step);
-  }, []);
+  const handleGoToStep = useCallback(
+    (step: number) => {
+      stepChange(step);
+    },
+    [stepChange]
+  );
 
   return { handleNext, handleBack, handleGoToStep };
 }

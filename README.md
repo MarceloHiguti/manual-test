@@ -4,6 +4,8 @@
 
 This web application is using Next.js as a React framework, Typescript and SASS. It displays a landing page with a quiz for the user known better Manual.co services.
 
+Check the deployed version clicking here: [manual test](https://manual-test-ten.vercel.app/)
+
 ## Installation
 
 This app requires [Node.js](https://nodejs.org/) to run.
