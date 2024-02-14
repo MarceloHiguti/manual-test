@@ -1,13 +1,15 @@
 .question {
   &__container {
     display: flex;
+    flex-direction: column;
+    gap: 50px;
     align-items: center;
     justify-content: center;
     padding: 10%;
   }
 
   &__frame {
-    width: 80%;
+    width: 100%;
 
     &__input {
       margin-top: 20px;

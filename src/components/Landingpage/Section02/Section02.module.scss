@@ -1,0 +1,59 @@
+@import "../LandingPage.module.scss";
+
+.section02 {
+  &__container {
+    width: 100%;
+    margin-bottom: 15%;
+    background-color: var(--global-secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15%;
+  }
+
+  &__text {
+    &__title {
+      font-size: 40px;
+      line-height: 60px;
+      color: var(--global-primary-text-color);
+
+      &__container {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &__content {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__text {
+      &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+      }
+
+      &__group {
+        width: 372px;
+      }
+
+      &__01 {
+        @extend %section_text_01;
+      }
+
+      &__02 {
+        @extend %section_text_02;
+      }
+
+      &__03 {
+        @extend %section_text_03;
+      }
+    }
+  }
+}

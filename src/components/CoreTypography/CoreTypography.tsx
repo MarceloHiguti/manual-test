@@ -1,23 +1,23 @@
-import { CoreTypographyProps, CoreTypographyVariant } from './CoreTypography.model';
-import styles from './CoreTypography.module.scss';
-import { getComponentByVariant } from './CoreTypography.util';
+import classNames from "classnames";
+import styles from "./CoreTypography.module.scss";
+import { ReactNode } from "react";
 
-export const CoreTypography: React.FC<CoreTypographyProps> = ({
+interface ICoreTypography {
+  children: ReactNode;
+  customClassName?: string;
+}
+
+export const CoreTypography: React.FC<ICoreTypography> = ({
   children,
-  component,
-  customClassName = '',
-  variant = CoreTypographyVariant.BODY_01_REGULAR,
-  ...props
+  customClassName = "",
 }) => {
-  const Component = getComponentByVariant({ variant, component });
-
   return (
-    <Component
-      className={`${styles[variant]} ${customClassName}`}
-      data-testid={`core-typography-${children}`}
-      {...props}
+    <span
+      className={classNames(styles.coreTypography, {
+        [customClassName]: !!customClassName,
+      })}
     >
       {children}
-    </Component>
+    </span>
   );
 };

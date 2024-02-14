@@ -1,0 +1,37 @@
+@import "../LandingPage.module.scss";
+
+.section03 {
+  &__container {
+    width: 100%;
+    margin-bottom: 10%;
+    background-color: var(--global-secondary-background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15%;
+  }
+
+  &__content {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__text {
+      &__group {
+        width: 372px;
+      }
+
+      &__01 {
+        @extend %section_text_01;
+      }
+
+      &__02 {
+        @extend %section_text_02;
+      }
+
+      &__03 {
+        @extend %section_text_03;
+      }
+    }
+  }
+}

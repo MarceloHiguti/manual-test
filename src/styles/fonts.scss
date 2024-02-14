@@ -1,7 +1,7 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 /* Fonts utils */
-%text__gilroy {
+%text__ttnorms {
   font-family: var(--font-family-ttnorms), system-ui;
 }
 
@@ -58,19 +58,19 @@
 
 /* Display/01 */
 %text__display01Regular {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__display01Size;
   font-weight: 400;
 }
 
 %text__display01SemiBold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__display01Size;
   font-weight: 600;
 }
 
 %text__display01ExtraBold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__display01Size;
   font-weight: 800;
 }
@@ -79,19 +79,19 @@
 
 /* Display/02 */
 %text__display02Regular {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__display02Size;
   font-weight: 400;
 }
 
 %text__display02SemiBold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__display02Size;
   font-weight: 600;
 }
 
 %text__display02ExtraBold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__display02Size;
   font-weight: 800;
 }
@@ -100,13 +100,13 @@
 
 /* Display/03 */
 %text__display03Medium {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__display03Size;
   font-weight: 500;
 }
 
 %text__display03Bold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__display03Size;
   font-weight: 700;
 }
@@ -115,13 +115,13 @@
 
 /* Headline/01 */
 %text__headline01Medium {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__headline01Size;
   font-weight: 500;
 }
 
 %text__headline01Bold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__headline01Size;
   font-weight: 700;
 }
@@ -130,7 +130,7 @@
 
 /* Headline/02 */
 %text__headline02Medium {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -140,13 +140,13 @@
 
 /* Title/01 */
 %text__title01Medium {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__title01Size;
   font-weight: 500;
 }
 
 %text__title01Bold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__title01Size;
   font-weight: 700;
 }
@@ -155,13 +155,13 @@
 
 /* Title/02 */
 %text__title02Medium {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__title02Size;
   font-weight: 500;
 }
 
 %text__title02Bold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__title02Size;
   font-weight: 700;
 }
@@ -170,13 +170,13 @@
 
 /* Title/03 */
 %text__title03Medium {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__title03OrBody01Size;
   font-weight: 500;
 }
 
 %text__title03Bold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__title03OrBody01Size;
   font-weight: 700;
 }
@@ -185,19 +185,19 @@
 
 /* Body/01 */
 %text__body01Regular {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__title03OrBody01Size;
   font-weight: 400;
 }
 
 %text__body01Medium {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__title03OrBody01Size;
   font-weight: 500;
 }
 
 %text__body01Bold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__title03OrBody01Size;
   font-weight: 700;
 }
@@ -206,19 +206,19 @@
 
 /* Body/02 */
 %text__body02Regular {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__body02Size;
   font-weight: 400;
 }
 
 %text__body02Medium {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__body02Size;
   font-weight: 500;
 }
 
 %text__body02Bold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__body02Size;
   font-weight: 700;
 }
@@ -227,19 +227,19 @@
 
 /* Label/01 */
 %text__label01Regular {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__label01Size;
   font-weight: 400;
 }
 
 %text__label01Medium {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__label01Size;
   font-weight: 500;
 }
 
 %text__label01Bold {
-  @extend %text__gilroy;
+  @extend %text__ttnorms;
   @extend %text__label01Size;
   font-weight: 700;
 }

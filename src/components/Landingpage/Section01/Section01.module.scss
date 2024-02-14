@@ -1,0 +1,42 @@
+.section01 {
+  &__container {
+    width: 100%;
+    min-height: 750px;
+    position: relative;
+    display: inline-block;
+  }
+
+  &__text {
+    &__container {
+      position: absolute;
+      width: 468px;
+      top: 25%;
+      left: 10%;
+      padding: 10px;
+      z-index: 1;
+    }
+
+    &__title {
+      color: var(--global-primary-text-color);
+      font-size: 90px;
+      line-height: 90px;
+    }
+
+    &__subtitle {
+      color: var(--global-primary-text-color);
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 40px;
+    }
+  }
+
+  &__logo {
+    &__container {
+      position: absolute;
+      top: 5%;
+      left: 10%;
+      padding: 10px;
+      z-index: 1;
+    }
+  }
+}

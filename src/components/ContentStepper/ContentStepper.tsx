@@ -1,8 +1,8 @@
 /* eslint-disable react/display-name */
-import { Box, StepLabel, Stepper } from '@mui/material';
-import Step from '@mui/material/Step';
-import StepButton from '@mui/material/StepButton';
-import classNames from 'classnames';
+import { Box, StepLabel, Stepper } from "@mui/material";
+import Step from "@mui/material/Step";
+import StepButton from "@mui/material/StepButton";
+import classNames from "classnames";
 import {
   forwardRef,
   ForwardRefExoticComponent,
@@ -12,13 +12,20 @@ import {
   useImperativeHandle,
   useMemo,
   useState,
-} from 'react';
+} from "react";
 
-import { useStepperActions } from './useStepperActions.hook';
-import { CoreButton } from '../CoreButton/CoreButton';
-import { ContentStepperActionButtonsPlacement, ContentStepperProps, IStepProps } from './ContentStepper.model';
-import styles from './ContentStepper.module.scss';
-import { getActionButtonsPlacementClasses, shouldDisplayEmptyBox } from './ContentStepper.util';
+import { useStepperActions } from "./useStepperActions.hook";
+import { CoreButton } from "../CoreButton/CoreButton";
+import {
+  ContentStepperActionButtonsPlacement,
+  ContentStepperProps,
+  IStepProps,
+} from "./ContentStepper.model";
+import styles from "./ContentStepper.module.scss";
+import {
+  getActionButtonsPlacementClasses,
+  shouldDisplayEmptyBox,
+} from "./ContentStepper.util";
 
 export interface StepperApi {
   readonly moveToNextStep: () => void;
@@ -44,7 +51,8 @@ export const ContentStepper: ForwardRefExoticComponent<
   ) => {
     const [auxActiveStep, setActiveStep] = useState(initialStep);
     const activeStep = useMemo(
-      () => (auxActiveStep > steps.length - 1 ? auxActiveStep - 1 : auxActiveStep),
+      () =>
+        auxActiveStep > steps.length - 1 ? auxActiveStep - 1 : auxActiveStep,
       [auxActiveStep, steps]
     );
 
@@ -65,7 +73,11 @@ export const ContentStepper: ForwardRefExoticComponent<
 
     const onHandleNavigateByStepper = useCallback(
       async (step: number) => {
-        if (areAllStepsCompleted && isStepAllowed && (await isStepAllowed(step))) {
+        if (
+          areAllStepsCompleted &&
+          isStepAllowed &&
+          (await isStepAllowed(step))
+        ) {
           handleGoToStep(step);
         }
       },
@@ -87,10 +99,8 @@ export const ContentStepper: ForwardRefExoticComponent<
       onHandleNext,
       onHandleCancel,
       nextButtonIcon,
-      onHandlePrevious,
       titleCancelButton,
       titleNextButton,
-      titlePreviousButton,
       isStartIcon = false,
       disableButton = false,
     } = useMemo(() => steps[activeStep], [steps, activeStep]);
@@ -130,16 +140,17 @@ export const ContentStepper: ForwardRefExoticComponent<
           )}
         >
           {onHandleCancel ? (
-            <CoreButton disabled={isLoading} onClick={onHandleCancel} variant="outlined">
+            <CoreButton
+              disabled={isLoading}
+              onClick={onHandleCancel}
+              variant="outlined"
+            >
               {titleCancelButton}
             </CoreButton>
           ) : null}
-          {shouldDisplayEmptyBox(actionButtonsPlacement) ? <Box className={styles.emptyBox} /> : undefined}
-          {activeStep > 0 ? (
-            <CoreButton disabled={isLoading} onClick={onHandlePrevious} variant="outlined">
-              {titlePreviousButton}
-            </CoreButton>
-          ) : null}
+          {shouldDisplayEmptyBox(actionButtonsPlacement) ? (
+            <Box className={styles.emptyBox} />
+          ) : undefined}
           {titleNextButton ? (
             <CoreButton
               disabled={disableButton}

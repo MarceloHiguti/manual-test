@@ -1,6 +1,5 @@
-import { IQuizOptionObject } from '@/services/quiz.service';
-import { SelectChangeEvent, SelectProps } from '@mui/material';
-// import { ControllerRenderProps, FieldValues } from 'react-hook-form';
+import { IQuizOptionObject } from "@/services/quiz.service";
+import { SelectProps } from "@mui/material";
 
 export interface CoreDropdown {
   value: string;
@@ -9,8 +8,7 @@ export interface CoreDropdown {
 
 export interface ICoreDropdownProps {
   options?: Array<IQuizOptionObject>;
-  // onHandleChange?: (field: ControllerRenderProps<FieldValues, string>, e: SelectChangeEvent<unknown>) => void;
-  // onValueSelected?: (field: ControllerRenderProps<FieldValues, string>) => string;
+  callbackOnChange?: (option: IQuizOptionObject) => void;
 }
 
 export type CoreDropdownProps = SelectProps & ICoreDropdownProps;
